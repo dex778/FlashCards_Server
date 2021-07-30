@@ -26,9 +26,7 @@ router.post('/register', (req, res) => { //with every endpoint we need route and
 
 router.post('/login', (req, res) => {
     User.findOne({ 
-        where: { 
-            username: req.body.username 
-        } 
+        where: {username: req.body.username} 
     })
     .then(user => {
         if(user){
