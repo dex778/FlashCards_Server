@@ -17,12 +17,6 @@ module.exports = db;
 
 
 
-
-
-
-
-
-
 // const db = new Sequelize(process.env.DB_NAME, 'postgres', process.env.DB_PASS, {
 //     host: 'localhost',
 //     dialect: 'postgres'
