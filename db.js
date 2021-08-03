@@ -22,4 +22,4 @@ module.exports = db;
 //     dialect: 'postgres'
 // });
 
-module.exports = db;
+// module.exports = db;
