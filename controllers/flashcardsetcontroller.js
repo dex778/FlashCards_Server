@@ -8,7 +8,7 @@ const flashcardset = require('../models/flashcardSet');
 
 router.post('/create', validateSession, (req,res) => {
     flashcardset.create({
-        setName: req.body.setName,
+        deckName: req.body.deckName,
         owner: req.user.id
     })
     .then(flashcardset => res.status(200).json(flashcardset))
@@ -42,7 +42,7 @@ router.get("/flashCard/:setId", function (req, res) {
 //Endpoint to update flashcard
 router.put("/update/:id", validateSession, function (req, res) {
     const updateFlashcardSet = {
-        setName: req.body.setName,      
+        deckName: req.body.deckName,      
     };
     const query = { where: { 
         id: req.params.id 

@@ -2,7 +2,7 @@ const sequelize = require('sequelize');
 const database = require('../db');
 
 const flashCardSet = database.define('flashcardset', {  
-    setName: {
+    deckName: {
         type: sequelize.STRING,
         allownull: false,
         unique: true
